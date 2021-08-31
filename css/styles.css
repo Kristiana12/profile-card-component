@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --clr-primary: hsl(185, 75%, 39%);
+  --clr-gray-400: hsl(229, 23%, 23%);
+  --clr-gray-600: hsl(227, 10%, 46%);
+  --clr-gray-700: hsla(229, 23%, 23%, 0.1);
+  --clr-gray-800: hsla(0, 0%, 59%, 0.26);
+
+  /* Fonts-sizes */
+  --font-size-title-desktop: 2rem;
+  --font-size-title-mobile: 1.8rem;
+  --font-size-text-desktop: 1.5rem;
+  --font-size-text-mobile: 1.4rem;
+  --font-size-small-text: 1.1rem;
+
+  /* Fonts-family */
+  --font-family: "Kumbh Sans", sans-serif;
+
+  /* Margins */
+  --margin-small: 2.4rem;
+
+  /* Paddings */
+  --padding-small: 2.8rem;
+}
+
+html,
+body {
+  background-color: var(--clr-primary);
+  font-size: 62.5%;
+  font-family: var(--font-family);
+  line-height: 1.7;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+[class*="bubble-"] {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+}
+
+.bubble-top {
+  top: -50%;
+  left: 0%;
+}
+
+.bubble-bottom {
+  bottom: -50%;
+  right: -5%;
+}
+
+.card {
+  background-color: #fff;
+  width: 90%;
+  max-width: 35rem;
+  height: 40rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1rem 3rem 2rem var(--clr-gray-700);
+}
+
+.card__bg-img {
+  width: 100%;
+  height: 40%;
+  background: url(../images/bg-pattern-card.svg) no-repeat center/cover;
+}
+
+.card__img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.card__personal-details {
+  margin-top: var(--margin-small);
+  border-bottom: 1px solid var(--clr-gray-800);
+  padding-bottom: var(--padding-small);
+  margin-top: 6rem;
+}
+
+.card__personal-details--name,
+.card__social-details__content--title {
+  color: var(--clr-gray-400);
+  font-size: var(--font-size-title-mobile);
+}
+
+.card__personal-details--name span {
+  color: var(--clr-gray-600);
+  font-weight: 300;
+}
+
+.card__personal-details--city {
+  font-size: var(--font-size-text-mobile);
+  color: var(--clr-gray-600);
+  font-weight: 200;
+}
+
+.card__social-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: var(--margin-small) 0 auto;
+  padding: 0 2rem;
+}
+
+.card__social-details__content--subtitle {
+  font-size: var(--font-size-small-text);
+  color: var(--clr-gray-600);
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+}

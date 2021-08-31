@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My CSS File -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <img
+        aria-hidden="true"
+        src="images/bg-pattern-top.svg"
+        alt=""
+        class="bubble-top"
+      />
+      <img
+        aria-hidden="true"
+        src="images/bg-pattern-bottom.svg"
+        alt=""
+        class="bubble-bottom"
+      />
+
+      <div class="card">
+        <div class="card__bg-img"></div>
+        <img
+          class="card__img"
+          src="images/image-victor.jpg"
+          alt="photo profil of Victor"
+        />
+        <div class="card__personal-details">
+          <h1 class="card__personal-details--name">
+            Victor Crest <span>26</span>
+          </h1>
+          <h2 class="card__personal-details--city">London</h2>
+        </div>
+        <div class="card__social-details">
+          <div class="card__social-details__content">
+            <h3 class="card__social-details__content--title">80K</h3>
+            <p class="card__social-details__content--subtitle">Followers</p>
+          </div>
+          <div class="card__social-details__content">
+            <h3 class="card__social-details__content--title">803K</h3>
+            <p class="card__social-details__content--subtitle">Likes</p>
+          </div>
+          <div class="card__social-details__content">
+            <h3 class="card__social-details__content--title">1.4K</h3>
+            <p class="card__social-details__content--subtitle">Photos</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
