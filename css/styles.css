@@ -52,7 +52,7 @@ body {
 
 [class*="bubble-"] {
   position: absolute;
-  width: 55%;
+  width: 50%;
   height: 100%;
 }
 
@@ -63,14 +63,14 @@ body {
 
 .bubble-bottom {
   bottom: -50%;
-  right: -5%;
+  right: 0%;
 }
 
 .card {
   background-color: #fff;
   width: 90%;
   max-width: 35rem;
-  height: 40rem;
+  height: 39rem;
   border-radius: 1.5rem;
   overflow: hidden;
   position: relative;
@@ -113,7 +113,7 @@ body {
 .card__personal-details--city {
   font-size: var(--font-size-text-mobile);
   color: var(--clr-gray-600);
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .card__social-details {
@@ -127,6 +127,6 @@ body {
 .card__social-details__content--subtitle {
   font-size: var(--font-size-small-text);
   color: var(--clr-gray-600);
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.1rem;
 }
